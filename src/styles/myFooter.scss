@@ -1,0 +1,29 @@
+
+  .social-media-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-media-bar h8 {
+    margin-right: 10px;
+  }
+  
+  .social-media-bar a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #ff4500; /* Cambia il colore al passaggio del mouse */
+    }
+  
+    &:not(:last-child) {
+      margin-right: 15px; /* Aggiunge margine solo tra i link */
+    }
+  }
+  

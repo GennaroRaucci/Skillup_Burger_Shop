@@ -1,0 +1,82 @@
+$primaryColor: #3498db;
+
+.auth-main-container {
+  display: flex;
+  background-image: url("../assets/sfondoHome.jpg");
+}
+.auth-form {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba($primaryColor, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+
+  h5 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid $primaryColor;
+        border-radius: 3px;
+      }
+    }
+
+    button {
+      display: block; 
+      margin: 0 auto; 
+      background-color: $primaryColor;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primaryColor, 10%);
+      }
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+
+
+    >button {
+      background: none;
+      color: $primaryColor;
+      border: none;
+      cursor: pointer;
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($primaryColor, 10%);
+      }
+    }
+  }
+}
+
